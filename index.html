@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,15 +10,27 @@
 
 <body>
     <header>
-
+        <h1>The weekly nerd</h1>
+        <p>Iris kreike || todays date</p>
     </header>
     <main>
-        <h1>The weekly nerd</h1>
-
+        <!-- legenda -->
         <article>
+            <h2>In this edition</h2>
+            <ul>
+                <li><a href="#killian">Stop using JS for that</a></li>
+                <li><a href="#cassie">Beyond tweening</a></li>
+                <li><a href="#jeremy">Declarative design</a></li>
+                <li><a href="#revieuw">All the weekly nerd reflections</a></li>
+                <li><a href="#master">Goals for the master assignment</a></li>
+                <li><a href="#reflection">Subject reflecion</a></li>
+            </ul>
+        </article>
+        <!-- weekly nerd #1, stop using JS for that -->
+        <article id="killian">
             <div>
-                <h2>(Titel)Stop using JS for that</h2>
-                <h3>subtitel</h3>
+                <h2>Stop using JS for that</h2>
+                <p>author || date</p>
                 <p>(tekst) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -38,43 +50,91 @@
                 </section>
             </div>
         </article>
-        <article>
+        <!-- weekly nerd #3, beyond tweening -->
+        <article id="cassie">
+            <h2>Beyond tweening</h2>
+            <p>cassie evans || 7-3-25</p>
+            <p>Cassie evans works for GSAP, an animation library with wich you can animate anything!</p>
+            <h3>main elements</h3>
+            <p>The GSAP library contains 2 main elements, with wich you can make the whole library work</p>
+            <h4>tween</h4>
+            <p>The method to call and use the library. It commonly looks like this:</p>
+            it looks like this!
+            <h4>timelines</h4>
+            <p>Timelines are used to time your animation, and are similar in use of how animations in after effects
+                work. For example, this makes the standard animations play after eachother instead of in the same
+                timeframe.</p>
+            <h3>animation toolbox</h3>
+            <p>When you are writing code, you use only what you know and dont think about new ways to do it. There are
+                so many better ways to do things but you need to know wich tools to use and where to find them.</p>
+            <p class="quote">"To a man with a hammer, everything looks like a nail." - Mark Twain</p>
+            <h4>Useful features</h4>
+            <h5>Utils</h5>
+            <ul>
+                <li>random</li>
+                <li>moprange</li>
+                <li>wrap</li>
+                <li>pipe</li>
+            </ul>
+            <h5>Easing</h5>
+            <p>With the GSAP ease visualiser it is very easy to to test your easings before implementing it in your
+                code. It also has a feature to directly implement the easings into css. </p>
+            <a href="https://gsap.com/docs/v3/Eases/">link to the visualiser</a>
+            <h5>other useful stuff</h5>
+            <ul>
+                <li>Match Media -> kind of like a media query</li>
+                <li>Reduce motion</li>
+                <li>Control methods, like youtube controls and speed controls</li>
+                <li>Draggable</li>
+                <li>Helper function, like container animation</li>
+            </ul>
+            <section class="reflecion">
+                <h4>reflection</h4>
+                <p>I had never used or heard of GSAP before, wich made the introduction mildly interesting and the code
+                    examples utterly useless. The lecture did make me interested in trying out the library, however not
+                    for a specific project or using the highlighted features.</p>
+            </section>
+        </article>
+        <!-- weekly nerd #4, declarative design -->
+        <article id="jeremy">
             <h2>Declarative design</h2>
-            <p>Jeremy (schrijver)</p>
-            <p>(datum)</p>
+            <p>Jeremy || 12-3-25</p>
             <p>There are two approaches to design in the workfield, declarative and imperative. Neither is wrong,
                 neither is right, but we are gonna go over some highlights of both methods.</p>
-            <h3>First, the basis [3]</h3>
+            <h3>First, the basis</h3>
             <p>With imperative design you work with precise instructions.
                 With declarative design you work with the output you want and let the software think about how to get
                 there.</p>
             <h3>How does this apply in the World Wide Web</h3>
-            <ol>
+            <ul>
                 <li>Html – declarative</li>
                 <li>Css - declarative</li>
                 <li>Js – imperative</li>
-            </ol>
+            </ul>
             <p>This makes both html and css fault tolerant, while javascript stops execution if there is an error in the
                 code</p>
-            <p class="quote">“javascript should only do what only javascript can do” [quote]</p>
+            <p class="quote">“Javascript should only do what only javascript can do”</p>
             <h3>Why does it matter</h3>
             <p>This distinction between mindsets is, in the root, a difference in control. Why do you choose to make
                 your own button, or to trust the browser to make one for you. Do you see the code the browser gives you
                 as features or as bugs? My advise- let the browser work for you. </p>
-                <h3>something about assumtions</h3>
-                <p>make more text here</p>
-                <p class="quote">Be the browsers mentor (imperative) not its micromanager (declarative)</p>
-            <h3>thinking about thinking </h3>
+            <h3>something about assumptions</h3>
+            <p>make more text here</p>
+            <p class="quote">"Be the browsers mentor (imperative) not its micromanager (declarative)"</p>
+            <h3>Thinking about thinking </h3>
             <p>text here as well- systems in the real world</p>
 
 
-            <section class="revieuw">
-                <p>This lecture by Jeremy was really interesting, and he is a really good storyteller. You could tell he is willing to share his experience and knowledge and is not trying to sell us anything. Key points are:</p>
-<ol>
-    <li>Find the culture that fits</li>
-    <li>Find the way of working that fits for you</li>
-    <li>Find yourself</li>
-</ol>
+            <section class="reflecion">
+                <h4>reflecion</h4>
+                <p>This lecture by Jeremy was really interesting, and he is a really good storyteller. You could tell he
+                    is willing to share his experience and knowledge and is not trying to sell us anything. Key points
+                    are:</p>
+                <ul>
+                    <li>Find the culture that fits</li>
+                    <li>Find the way of working that fits for you</li>
+                    <li>Find yourself</li>
+                </ul>
             </section>
 
 
@@ -85,6 +145,118 @@
                 (tekst)
                 (link)
             </section>
+        </article>
+        <!-- all the weekly nerd reflections -->
+        <article id="revieuw">
+            <h2>All of the weekly nerd reflections</h2>
+            <p>lets gooooo</p>
+            <section class="reflecion">
+                <h4>reflection- #1</h4>
+                <p>This weekly nerd by killian was a good start to the minor- It broadened perspective and opens eyes to
+                    possibilities of the world wide web. It is a good base for techniques and terms that are going to be
+                    used later in the minor.</p>
+            </section>
+            <section class="reflecion">
+                <h4>reflection- #2</h4>
+                <p>A weekly nerd, or a sales pitch? Peter-paul Koch told us about payments in the web, and his reasons
+                    seemed very ethical and strong. His vieuw on the state and the future on the internet opened my
+                    eyes. It did seem to melt into a sales pitch, wich was a shame. I myself do not know enough about it
+                    to ask accurate questions, however the questions my classmates asked him made me doubt his product.
+                </p>
+            </section>
+            <section class="reflecion">
+                <h4>reflection- #5</h4>
+                <p>This lecture by Rose went over the mindset: what if you just try it? It really spoke to me personally
+                    because i like making weird stuff, and to see it is possible with tech was great. There was not a
+                    lot of factual information, however the mindset is one to consider when growing and learning.</p>
+            </section>
+            <section class="reflecion">
+                <h4>reflection- #6</h4>
+                <p>Niels Leenheer came to talk about registers. The conclusion basicly was: If you are gonna do it, dont
+                    because i did it for you and it HURT. The secondary message was: Things communicate in different
+                    languages. It was fun to learn more about how computers think, alphabets and the 0's and 1's of it
+                    all. It showed how deep the rabbithole sometimes goes, and i hope to be as passionate about a
+                    subject to follow it down the rabbithole as far as he is willing to.</p>
+            </section>
+            <section class="reflecion">
+                <h4>reflection- #7</h4>
+                <p>The talk from Nienke was very intimidating. Is that supposed to be me in 2 years? Am i on the right
+                    track and passionate enough? Her work was great and important and i admire her for what she does.
+                </p>
+                <p>The talk from Erik had useful information, though it was not new. It is good to emphasise these
+                    points agian because they are so often forgotten. It seems so simple, yet in practice it is simple
+                    as well! You just have to think about it.</p>
+            </section>
+        </article>
+        <!-- learning goals master assignment (add hackathon revieuw here?) -->
+        <article id="master">
+            <h2>Goals</h2>
+            <p>Iris || 7-5-25</p>
+            <h3>Learning goals for the master assignment</h3>
+            <h4>CSS</h4>
+            <p>I have learned a lot about style and css in this minor, but i think there is more to learn. I wish to
+                learn css in a different way, as for now i have been approaching it as a canvas without limits. I
+                realise this is probably not how that works in the real world, and in the master assigment i would like
+                to hone my skills towards them being useful in the real world</p>
+            <h4>Working with teammates</h4>
+            <p>A part of the Hackathon that i found most diffecult was working together with my teammates. Partly
+                because i had never collaborated on such a project before. I also found it hard to understand what my
+                team was doing, and felt I was making things without thinking. I would like to change this and do better
+                during this assigment.</p>
+            <h4>Proffessional presenting</h4>
+            <p>I prefer a casual style of presenting, in feedbackconversations and also as end presentation. This makes
+                me confident and comfortable in my own skillset, however I do realise this isnt always a good look. In
+                this project I would like to experiment with a more proffessional style of presenting and familiarise
+                myself with it in a way that i feel confident presenting.</p>
+        </article>
+        <!-- subject reflection (add pictures? split up in different parts) -->
+        <article id="reflection">
+            <h2>Subject reflecion</h2>
+            <p>Iris || 7-5-25</p>
+            <h3>Web Apps From Scratch</h3>
+            <p>The WAFS week was a very useful week to get back into the flow of coding. It was fun to have the freedom
+                to make literally anything. It made me brush up on my terms and coding trick, and learned some new ones
+                in the process</p>
+            <h3>CSS to the resque</h3>
+            <p>This was a very fun subject to take a deep dive into. It forces you to think outside the box (in my case
+                a bit too much to Sannes taste) and it learned me to style quickly and just try things if I think they
+                might work. I did notice that i struggele with using techniques because they are new, because my
+                intuition is to learn new things when they become nececarry.</p>
+            <h3>Browser Technologies</h3>
+            <p>BT showed me how useful HTML elements are and how much they can to on their own. It did inspire me to
+                look just a bit further if you are looking for a thing that does something, for it may already exist.
+            </p>
+            <h3>Hackathon</h3>
+            <h4>concept</h4>
+            <p>The concept for the hacathon project was a infinite scroll screen where all the woman of tech had a card.
+                If you were to click on one of these card a popup would happen with more information about them. This
+                concept was made to be a giant wall of fame and to give each person a place to shine and be aknowledged
+            </p>
+            <h4>experimental tech</h4>
+            <p>I took this assigment to experiment with some new tech, mostly in css. Most notable were the clamp
+                attribute (we were named clampers after all) and the "use" tag</p>
+            <h4>my contribution</h4>
+            <p>I made a pure css animation to indicate the canvas being able to be swiped. I coded the extended card,
+                displayed when wanting more information about the woman in tech. I also transformed and worked with the
+                SVG's of the country's. </p>
+            <h4>reflection</h4>
+            <p>Beginning is the hardes part of an assignment, this has always been this way. Not only doubt and
+                insecurity but mental an physical exhaustion ar battles fought and hurdles encountered. In an assigment
+                with a duration less than 4 days these issues amplify. For the first two days i was unable to be my best
+                self and deliver my best work, wich is a crucial moment in the decision making progress. I am very glad
+                for my team, and that we got this far.
+            </p>
+            <h3>API</h3>
+            <p>I learned a lot during API. I was ambitious with my goal of making a chat website, but with the help of
+                Declan and Cyd it turned out better than excpected. I am really proud of what i made, and i do
+                understand what I did although i doubt i could recreate it on my own. Sadly there were a few bugs,
+                partly due to it being put online but I still had many ideas on how to improve at the end of the course.
+            </p>
+            <h3>HCD</h3>
+            <p>This was a really fun project to work on. I started of with the idea of a sound graph, but with tests and
+                experience it transformed to lines going up and down, moving shapes and the addition to emoji's and
+                subtitles. It was really fun to dive into the requirements of one specific person and find creative
+                solutions to common problems</p>
         </article>
     </main>
     <footer></footer>

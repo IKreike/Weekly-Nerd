@@ -1,67 +1,82 @@
-/* https://codepen.io/silkine/pen/QWBxVX?editors=1100 */
-body{
+/* inspiration (I ended up doing it completely differently): https://codepen.io/silkine/pen/QWBxVX?editors=1100 */
+body {
     margin: 0;
     border: 0;
     box-sizing: border-box;
 
     background-color: antiquewhite;
 
-    container-type:inline-size;
-	container-name:--body;
-
-    display:grid;
-    grid-template-columns:repeat(5 1fr);
-    grid-template-rows: 1fr; 
-
-    width: 100dvw;
+    /* width: 100dvw; */
     /* height: 100dvh; */
 
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
-h1{
-    /* font-family:sans-serif; */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
 }
-header{
-    border-bottom: sienna 5px dashed;
+
+header {
+    width: 100dvw;
+    text-align: center;
+
+    /* margin-inline: 5rem; */
+    h1 {
+        text-transform: capitalize;
+    }
+
+    p {
+        text-transform: uppercase;
+        border-block: rgb(43, 43, 43) 1px solid;
+    }
 }
 
-article{
-    /* grid-column: span 2; */
-    border: rgb(28, 180, 63) 1px double;
+article {
+    border-inline: rgb(43, 43, 43) 1px solid;
 
-    container-type:inline-size;
-	container-name:--article;
+    padding: .5rem;
+    width: 50px;
+    min-width: 300px;
+    /* height: 100dvh; */
+    flex-grow: 1;
 
-    /* div{
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows: repeat(5 auto); 
-        grid-template-areas: 
-            "title"
-            "subtitle"
-            "text"
-            "quote"
-            "ad";
-    } */
+    h2 {
+        text-align: center;
+
+        &+p {
+            /* background-color: green; */
+            text-align: center;
+            text-transform: uppercase;
+            border-block: rgb(43, 43, 43) 1px solid;
+        }
+    }
 }
 
 section {
-    border: sienna 1px solid;
-    /* color: sienna; */
+    border: rgb(43, 43, 43) 1px solid;
 }
 
+.quote {
+    text-align: center;
+    font-style: italic;
 
-/* big block styling */
-@container --article (inline-size > 30rem){
-	h2 {
-		color:hotpink;
-	}
-	/* div {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: max-content 1fr;
-			grid-template-areas:
-		"image title"
-		"image omschrijving";
-		gap:0 1em;
-	} */
+    /* id love for the line not to stretch all te way to the edges */
+    border-block: rgb(43, 43, 43) 1px solid;
+
+    padding: .5rem;
+}
+
+.reflecion {
+    padding: .5rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    &:hover{
+        background-color: yellow;
+
+    }
 }
