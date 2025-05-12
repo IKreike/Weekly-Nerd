@@ -17,38 +17,46 @@
         <!-- legenda -->
         <article>
             <h2>In this edition</h2>
+            <p>Click to flip to the page</p>
             <ul>
                 <li><a href="#killian">Stop using JS for that</a></li>
                 <li><a href="#cassie">Beyond tweening</a></li>
                 <li><a href="#jeremy">Declarative design</a></li>
                 <li><a href="#revieuw">All the weekly nerd reflections</a></li>
                 <li><a href="#master">Goals for the master assignment</a></li>
-                <li><a href="#reflection">Subject reflecion</a></li>
+                <li><a href="#reflection">Subject reflection</a></li>
             </ul>
         </article>
         <!-- weekly nerd #1, stop using JS for that -->
         <article id="killian">
-            <div>
-                <h2>Stop using JS for that</h2>
-                <p>author || date</p>
-                <p>(tekst) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.</p>
-                <img src="" alt="">
-                <p>(schrijver)</p>
-                <p>(datum)</p>
-                <section>
-                    (advertentie)
-                    (titel)
-                    (tekst)
-                    (link)
-                </section>
-            </div>
+            <h2>Stop using JS for that</h2>
+            <p>Killian valkhof || date</p>
+            <p>In the world wide web there are an infinite amount of ways to solve each problem. These are the most
+                useful tips and tricks and how to apply them.</p>
+            <h3>Rule of the Least power</h3>
+            <p>The rule of the least power entails that you should choose to write in the language with the least power
+                possible for the purpose. In this way, the browser doestn have to think too hard and slow down the
+                processes. This makes for a better user experience. In the world wide web are HTML and CSS both lighter
+                than Javascript.</p>
+            <ul>
+                <li>Browser does not have to think</li>
+                <li>Both HTML and CSS are lighter languages than JS</li>
+            </ul>
+            <h3>Html and css tricks </h3>
+            <p>There are many features in standard HTML and css that, when used correctly, eliminates the need for
+                javascript. </p>
+            <h4>Custom switches </h4>
+            <p>If you want to make a custom switch, start with appearance:none; . This resets the standard filled in by
+                the browser while keeping its functionality intact. When redesigning think about the focus-visible
+                attribute for navigating the page with a keyboard. </p>
+            <h4>In page transisitions </h4>
+            <h4>The parent selector</h4>
+            <section class="reflection">
+                <h4>reflection- #1</h4>
+                <p>This weekly nerd by killian was a good start to the minor- It broadened perspective and opens eyes to
+                    possibilities of the world wide web. It is a good base for techniques and terms that are going to be
+                    used later in the minor.</p>
+            </section>
         </article>
         <!-- weekly nerd #3, beyond tweening -->
         <article id="cassie">
@@ -59,7 +67,11 @@
             <p>The GSAP library contains 2 main elements, with wich you can make the whole library work</p>
             <h4>tween</h4>
             <p>The method to call and use the library. It commonly looks like this:</p>
-            it looks like this!
+            <p class="code">
+                <span>p</span>
+                de tekst die in het ding staat!
+                <span>/p</span>
+            </p>
             <h4>timelines</h4>
             <p>Timelines are used to time your animation, and are similar in use of how animations in after effects
                 work. For example, this makes the standard animations play after eachother instead of in the same
@@ -79,7 +91,12 @@
             <h5>Easing</h5>
             <p>With the GSAP ease visualiser it is very easy to to test your easings before implementing it in your
                 code. It also has a feature to directly implement the easings into css. </p>
-            <a href="https://gsap.com/docs/v3/Eases/">link to the visualiser</a>
+            <section class="ad">
+                <h4>Visualize NOW with the GSAP VISUALISER</h4>
+                <a href="https://gsap.com/docs/v3/Eases/">Need to do a tricky animation and going frame-by-frame is too
+                    much to ask? Graps and motion are your thing? Try the GSAP Visualiser now!</a>
+                <p>Only $0.00 - no terms and conditions apply</p>
+            </section>
             <h5>other useful stuff</h5>
             <ul>
                 <li>Match Media -> kind of like a media query</li>
@@ -88,7 +105,7 @@
                 <li>Draggable</li>
                 <li>Helper function, like container animation</li>
             </ul>
-            <section class="reflecion">
+            <section class="reflection">
                 <h4>reflection</h4>
                 <p>I had never used or heard of GSAP before, wich made the introduction mildly interesting and the code
                     examples utterly useless. The lecture did make me interested in trying out the library, however not
@@ -125,8 +142,8 @@
             <p>text here as well- systems in the real world</p>
 
 
-            <section class="reflecion">
-                <h4>reflecion</h4>
+            <section class="reflection">
+                <h4>reflection</h4>
                 <p>This lecture by Jeremy was really interesting, and he is a really good storyteller. You could tell he
                     is willing to share his experience and knowledge and is not trying to sell us anything. Key points
                     are:</p>
@@ -150,13 +167,7 @@
         <article id="revieuw">
             <h2>All of the weekly nerd reflections</h2>
             <p>lets gooooo</p>
-            <section class="reflecion">
-                <h4>reflection- #1</h4>
-                <p>This weekly nerd by killian was a good start to the minor- It broadened perspective and opens eyes to
-                    possibilities of the world wide web. It is a good base for techniques and terms that are going to be
-                    used later in the minor.</p>
-            </section>
-            <section class="reflecion">
+            <section class="reflection">
                 <h4>reflection- #2</h4>
                 <p>A weekly nerd, or a sales pitch? Peter-paul Koch told us about payments in the web, and his reasons
                     seemed very ethical and strong. His vieuw on the state and the future on the internet opened my
@@ -164,13 +175,13 @@
                     to ask accurate questions, however the questions my classmates asked him made me doubt his product.
                 </p>
             </section>
-            <section class="reflecion">
+            <section class="reflection">
                 <h4>reflection- #5</h4>
                 <p>This lecture by Rose went over the mindset: what if you just try it? It really spoke to me personally
                     because i like making weird stuff, and to see it is possible with tech was great. There was not a
                     lot of factual information, however the mindset is one to consider when growing and learning.</p>
             </section>
-            <section class="reflecion">
+            <section class="reflection">
                 <h4>reflection- #6</h4>
                 <p>Niels Leenheer came to talk about registers. The conclusion basicly was: If you are gonna do it, dont
                     because i did it for you and it HURT. The secondary message was: Things communicate in different
@@ -178,7 +189,7 @@
                     all. It showed how deep the rabbithole sometimes goes, and i hope to be as passionate about a
                     subject to follow it down the rabbithole as far as he is willing to.</p>
             </section>
-            <section class="reflecion">
+            <section class="reflection">
                 <h4>reflection- #7</h4>
                 <p>The talk from Nienke was very intimidating. Is that supposed to be me in 2 years? Am i on the right
                     track and passionate enough? Her work was great and important and i admire her for what she does.
@@ -226,7 +237,7 @@
         </article>
         <!-- subject reflection (add pictures? split up in different parts) -->
         <article id="reflection">
-            <h2>Subject reflecion</h2>
+            <h2>Subject reflection</h2>
             <p>Iris || 7-5-25</p>
             <h3>Web Apps From Scratch</h3>
             <p>The WAFS week was a very useful week to get back into the flow of coding. It was fun to have the freedom

@@ -24,7 +24,11 @@ header {
 
     /* margin-inline: 5rem; */
     h1 {
-        text-transform: capitalize;
+        text-transform: uppercase;
+        /* doing accents and flavour */
+        /* & ::before{
+            content: '';
+        } */
     }
 
     p {
@@ -54,8 +58,25 @@ article {
     }
 }
 
+/* refletion section */
 section {
     border: rgb(43, 43, 43) 1px solid;
+    padding: .5rem;
+
+}
+.reflection{
+/* reflections ook met donkere achtergrond? */
+}
+.ad{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    a {
+        color: white;
+    }
+    p{
+        font-size: small;
+    }
 }
 
 .quote {
@@ -68,15 +89,29 @@ section {
     padding: .5rem;
 }
 
-.reflecion {
-    padding: .5rem;
-}
 
 a{
     color: black;
     text-decoration: none;
     &:hover{
         background-color: yellow;
+        color: black;
+    }
+}
 
+.code {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    padding: .5rem;
+    span{
+        color: lime;
+    }
+    span::before{
+        content: "<";
+        color: grey;
+    }
+    span::after{
+        content: ">";
+        color: grey;
     }
 }
