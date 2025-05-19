@@ -20,11 +20,18 @@
             <p>Click to flip to the page</p>
             <ul>
                 <li><a href="#killian">Stop using JS for that</a></li>
+                <li><a href="#peter">Pay the web forward</a></li>
                 <li><a href="#cassie">Beyond tweening</a></li>
                 <li><a href="#jeremy">Declarative design</a></li>
+                <li><a href="#IDEALLYerik">Practical fixes for common WCAG failures</a></li>
+                <li><a href="#IDEALLYnienke">Thinking outside the accessibility box</a></li>
+                <li><a href="#IOdave">The rise of AI powered voice interfaces</a></li>
+                <li><a href="#IOsteve">Twitter follow bot and follower scraper</a></li>
+                <li><a href="#IOclarke">x</a></li>
                 <li><a href="#revieuw">All the weekly nerd reflections</a></li>
                 <li><a href="#master">Goals for the master assignment</a></li>
                 <li><a href="#reflection">Subject reflection</a></li>
+
             </ul>
         </article>
         <!-- weekly nerd #1, stop using JS for that -->
@@ -58,6 +65,49 @@
                     used later in the minor.</p>
             </section>
         </article>
+        <!-- weekly nerd #2, Pay the web forward -->
+        <article id="peter">
+            <h2>Pay the web forward with web monitization</h2>
+            <p>Peter-paul Koch || 26-2-25</p>
+            <p>The decision for the web to be free was made in the late 90’s. This has become a bad habit that we should
+                alter. The way people currently make money of the web is throught the use of ads. This has two effects:
+                The user thinks they don’t have to do anything and all users only get the results rich people and
+                companies want us to see. </p>
+            <h3>What do we want?</h3>
+            <p>As website developers, we want our work to be appreciated and valued correctly. Currently, a good site
+                costs a lot of work and gains barely anything. If visitors give money from their own initiative
+                develepers will be encouraged to make their sites better, so users stay on the site longer or visit more
+                often.</p>
+            <h3>How can we do this?</h3>
+            <ul>
+                <li>We need to set up an online bank account, directly connecter to a real bank account. For this we
+                    need to be able to verify our customers identity</li>
+                <li>We need a browser extention to manage this. We are working with mulitple browsers to integrate this
+                    into the browsers themselves.</li>
+                <li>We need to make a standard amount of money paid and when. The customer must be able to change this.
+                </li>
+                <li>We need to comply with international rules. Currently, they EU can only pay for EU-based websites,
+                    same as the USA. We need to establish a chain of trust between the organisations.</li>
+            </ul>
+            <h3>Suppport</h3>
+            <p>A link tag in the head of the HTML, being checked by the browser extrention. An initial signal is sent to
+                establish connection. Afterwards the money will be sent by either the streaming method (sent the money
+                live for) or post paid (only sent the money afterwards, with a good internet connection)</p>
+            <section class="ad">
+                <h4>web ad</h4>
+                <a href="https://webmonetization.org/">link</a>
+            </section>
+            <section class="reflection">
+                <h4>reflection- #2</h4>
+                <p>A weekly nerd, or a sales pitch? Peter-paul Koch told us about payments in the web, and his reasons
+                    seemed very ethical and strong. His vieuw on the state and the future on the internet opened my
+                    eyes. It did seem to melt into a sales pitch, wich was a shame. I myself do not know enough about it
+                    to ask accurate questions, however the questions my classmates asked him made me doubt his product.
+                </p>
+            </section>
+
+
+        </article>
         <!-- weekly nerd #3, beyond tweening -->
         <article id="cassie">
             <h2>Beyond tweening</h2>
@@ -68,9 +118,20 @@
             <h4>tween</h4>
             <p>The method to call and use the library. It commonly looks like this:</p>
             <p class="code">
-                <span>p</span>
+                <!-- <span>p</span>
                 de tekst die in het ding staat!
-                <span>/p</span>
+                <span>/p</span> -->
+                gsap.
+                <span class="method">to</span>(
+                '<span>.box</span>'
+                <span class="method">(x=20d)</span>)
+            </p>
+            <p>These string consists of:</p>
+            <p class="code">
+                call gsap
+                <span class="method">method</span>
+                <span>object</span>
+                <span class="method">method</span>
             </p>
             <h4>timelines</h4>
             <p>Timelines are used to time your animation, and are similar in use of how animations in after effects
@@ -96,6 +157,7 @@
                 <a href="https://gsap.com/docs/v3/Eases/">Need to do a tricky animation and going frame-by-frame is too
                     much to ask? Graps and motion are your thing? Try the GSAP Visualiser now!</a>
                 <p>Only $0.00 - no terms and conditions apply</p>
+                <img src="./assets/gsap.webp" alt="">
             </section>
             <h5>other useful stuff</h5>
             <ul>
@@ -163,18 +225,122 @@
                 (link)
             </section>
         </article>
+        <!-- weekly nerd #7 IDEALLY erik-->
+        <article id="IDEALLYerik">
+            <h2>Practical fixes for common wcag problems</h2>
+            <p>Erik kroes || 16-4-25</p>
+            <p>There are 4 objects that are so often done wrong and yet so easy to get right. Spending seconds to think
+                about these problems will make the web more accessible. An accessible product is a product that’s usable
+                by everybody, including people with disability’s.</p>
+            <p class="quote">"A hole in the wall is technically accesible because people can get inside."</p>
+            <h3>Keyboard</h3>
+            <p>You should be able to use tab and shift-tab to get to all interactive objects on the page. A link to skip
+                the navigation when nececarry saves minutes of time and repeated information. A controlled focus state
+                makes the website clearer. And remember the biggest sin of all: a div with a role of button.</p>
+            <p class="code hooks">
+                <span class="method">div</span>
+                <span>role</span>="button"
+            </p>
+            <p>This makes the whole thing inaccessable by keyboard.</p>
+            <h3>Contrast</h3>
+            <p>You might think contrast is not as much of a regular problem, but when the sun shines it becomes a
+                problem for everybody.</p>
+            <p>The contrast ratio should be 3:1 for large texts (24+ px) and bold texts (19+ px). All other text should
+                at least have a contrast of 4.5:1.</p>
+            [examples?]
+            <h3>Alternatives</h3>
+            <p>Captions, transcripts and text alternatives for images. These don’t have to be in the code, if you add
+                them to your site it works for everybody. Even when there is no audio, it is very useful to know this!
+                Common problems are images in buttons or link, and video content.</p>
+            <h3>Sizing</h3>
+            <p>The internet should be functional in all shapes and sizes, even if your screen is 320px. External content
+                like cookies and popups don’t think about this often, so keep in mind if you really need these services.
+            </p>
+            <img src="./assets/Screenshot 2025-05-13 at 14.00.14.png"
+                alt="Meme. 1st panel: I get that it works on your computer. 2nd panel: we are not giving your computer to the client">
+            <section class="ad">
+                <h4>Solidstart</h4>
+                <a href="https://www.solidstart.info/"> solidstart site</a>
+            </section>
+        </article>
+        <!-- weekly nerd #7 IDEALLY nienke-->
+        <article id="IDEALLYnienke">
+            <h2>Thinking outside the accessibility box</h2>
+            <p>nienke de keizer || 16-4-25</p>
+            <p>In my internship at GVB I noticed the app is not as accesible as it should be, so for my master
+                assignment I decided to research and redesign this, focussed on people with limited with sight. </p>
+            <p class="quote">“Accesibility is made for a small group, but they matter”</p>
+            <p>A very practical example of the new technologie being inaccessable to people with limited sight is the
+                new electric busses. To call on the busses previously, people would listen to the dieselmotors to
+                announce the arrival of the bus. Now that those are done, a new system has been implemented in the signs
+                that calls out the arrival of the busses.</p>
+            <p>Previously, the ReisAssist app was made for the for the visually impaired. In the long term, this app
+                might replace that or the outdated techniques that are in the current app.</p>
+            <p>Nienke de Keizer has introduced accesibility to GVB.</p>
+            <section class="reflection">
+                <h4>reflection- #7</h4>
+                <p>The talk from Nienke was very intimidating. Is that supposed to be me in 2 years? Am i on the right
+                    track and passionate enough? Her work was great and important and i admire her for what she does.
+                </p>
+                <p>The talk from Erik had useful information, though it was not new. It is good to emphasise these
+                    points agian because they are so often forgotten. It seems so simple, yet in practice it is simple
+                    as well! You just have to think about it.</p>
+            </section>
+        </article>
+        <!-- weekly nerd #8 IO dave -->
+        <article id="IOdave">
+            <h2>The rise of AI powered voice interfaces </h2>
+            <p>dave bitter || 15-5-25</p>
+            <p>Voice recognition has existed and been developed since 1950. This has been slowly changing the way people
+                find information. From having microphone detection in your search bar to now whole AI’s and applications
+                that are build on this concept, the developments in the last few years have been fast and succesful. The
+                newest AI tools all contain 4 key parts.</p>
+            <ul>
+                <li>Speech recognition - API</li>
+                <li>Speech synthesis - API</li>
+                <li>Connection with the AI – what is said and what is the response</li>
+                <li>Personality and feedback to the user – what does the user see</li>
+            </ul>
+            <p>But it doenst feel quite natural yet. Using another AI, we could imitate a human speech pattern with
+                intonation. However, the step to sent the information back and forth as a whole creates big delays,
+                making the conversation slow and unnatural. </p>
+            <p>To fix this problem I cut up the response of the AI in separate sentences, and ‘humanised’ the
+                information while it was speaking, thus removing some of the delay and making the conversation more
+                fluent.</p>
+            <p class="quote">“AI is just another data source”</p>
+        </article>
+        <!-- weekly nerd #8 IO steve -->
+        <article id="IOsteve">
+            <h2>Twitter follow bot and follower scraper</h2>
+            <p>steve jonk || 14-5-25</p>
+            <p>I once got asked by a marketing bureau to make a twitter bot that follows all followers of another
+                account. Let me show you how I did it. Disclaimer: this is not entirely legal.</p>
+            <h3>Tools</h3>
+            <ul>
+                <li>N8n – automiser of a workflow</li>
+                <li>Puppeteer – browser automation</li>
+                <li>Twitter API</li>
+                <li>Postgreas – database</li>
+                <li>Docker – containerisation</li>
+                <li>Ubuntu – server</li>
+            </ul>
+            <h3>Obstacles</h3>
+            <p>Making and using a Bot is agianst twitters terms of service. So I had to make my bot seem as it was not a
+                machine, and to act like a human. I will follow, pause and after a randomised amount of time unfollow or
+                follow the next person. </p>
+            <p>The next obstacle I encountered was how to get the data. Twitter has an API of themselves, but to use it
+                to the extend that I needed it to the cost would be in the five figures. So, I used a scaper to get the
+                publicly accesible follower information of the internet. However, this information is only available on
+                different pages. So again, randomise and pause. </p>
+            <h3>Final product</h3>
+            <p>In the end I made a working product that took longer than expected, is visually supported by n8n and is borderline illegal.</p>
+            <p>Conclusion: it can be very lucrative to work for yourself in this field.</p>
+        </article>
+        <!-- weekly nerd #8 IO clarke -->
         <!-- all the weekly nerd reflections -->
         <article id="revieuw">
             <h2>All of the weekly nerd reflections</h2>
             <p>lets gooooo</p>
-            <section class="reflection">
-                <h4>reflection- #2</h4>
-                <p>A weekly nerd, or a sales pitch? Peter-paul Koch told us about payments in the web, and his reasons
-                    seemed very ethical and strong. His vieuw on the state and the future on the internet opened my
-                    eyes. It did seem to melt into a sales pitch, wich was a shame. I myself do not know enough about it
-                    to ask accurate questions, however the questions my classmates asked him made me doubt his product.
-                </p>
-            </section>
             <section class="reflection">
                 <h4>reflection- #5</h4>
                 <p>This lecture by Rose went over the mindset: what if you just try it? It really spoke to me personally
@@ -188,15 +354,6 @@
                     languages. It was fun to learn more about how computers think, alphabets and the 0's and 1's of it
                     all. It showed how deep the rabbithole sometimes goes, and i hope to be as passionate about a
                     subject to follow it down the rabbithole as far as he is willing to.</p>
-            </section>
-            <section class="reflection">
-                <h4>reflection- #7</h4>
-                <p>The talk from Nienke was very intimidating. Is that supposed to be me in 2 years? Am i on the right
-                    track and passionate enough? Her work was great and important and i admire her for what she does.
-                </p>
-                <p>The talk from Erik had useful information, though it was not new. It is good to emphasise these
-                    points agian because they are so often forgotten. It seems so simple, yet in practice it is simple
-                    as well! You just have to think about it.</p>
             </section>
         </article>
         <!-- learning goals master assignment (add hackathon revieuw here?) -->
