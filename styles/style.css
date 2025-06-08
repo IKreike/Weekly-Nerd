@@ -1,4 +1,14 @@
 /* inspiration (I ended up doing it completely differently): https://codepen.io/silkine/pen/QWBxVX?editors=1100 */
+@font-face {
+    font-family: Unifraktur-bold;
+    src: url(../assets/fonts/UnifrakturCook/UnifrakturCook-Bold.ttf);
+}
+
+@font-face {
+    font-family: Unifraktur;
+    src: url(../assets/fonts/UnifrakturMaguntia/UnifrakturMaguntia-Regular.ttf);
+}
+
 body {
     margin: 0;
     border: 0;
@@ -6,72 +16,94 @@ body {
 
     background-color: antiquewhite;
 
-    /* width: 100dvw; */
-    /* height: 100dvh; */
-
     font-family: Georgia, 'Times New Roman', Times, serif;
+
+    --line-color: rgb(43, 43, 43);
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
+    /* TODO: display flex stugg */
+    /* display: flex;
+    flex-wrap: wrap; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+    /* grid-template-rows: repeat(8) 1fr ; */
+
+    grid-auto-flow: row dense;
+    /* grid-auto-columns: 100px 150px 390px; */
+    /* gap: .5rem; */
 }
 
 header {
     width: 100dvw;
     text-align: center;
 
-    /* margin-inline: 5rem; */
     h1 {
         text-transform: uppercase;
+
         /* doing accents and flavour */
-        /* & ::before{
-            content: '';
-        } */
+        &::before {
+            /* content: 'heyo'; */
+        }
     }
 
     p {
         text-transform: uppercase;
-        border-block: rgb(43, 43, 43) 1px solid;
+        border-block: var(--line-color) 1px solid;
     }
 }
 
 article {
-    border-inline: rgb(43, 43, 43) 1px solid;
+    border-inline: var(--line-color) 1px solid;
 
     padding: .5rem;
-    width: 50px;
+    /* margin: .5rem; */
+    width: 100%;
     min-width: 300px;
-    /* height: 100dvh; */
+
     flex-grow: 1;
 
     h2 {
         text-align: center;
 
         &+p {
-            /* background-color: green; */
             text-align: center;
             text-transform: uppercase;
-            border-block: rgb(43, 43, 43) 1px solid;
+            border-block: var(--line-color) 1px solid;
         }
+    }
+
+    &:nth-of-type(3){
+        flex-grow: 2;
     }
 }
 
 /* refletion section */
 section {
-    border: rgb(43, 43, 43) 1px solid;
+    border: var(--line-color) 1px solid;
     padding: .5rem;
 }
+
 .reflection {
     /* reflections ook met donkere achtergrond? */
 }
 
-img{
+p:nth-of-type(2)::first-letter {
+    initial-letter: 2;
+    padding: 2px;
+    /* ander meer newsletter font? */
+    font-family: Unifraktur;
+}
+
+img {
     max-width: 100%;
     filter: grayscale(1);
 }
 
 .ad {
+    --line-color: white;
+
     background-color: rgb(43, 43, 43);
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -90,9 +122,20 @@ img{
     font-style: italic;
 
     /* id love for the line not to stretch all te way to the edges */
-    border-block: rgb(43, 43, 43) 1px solid;
+    border-block: var(--line-color) 1px solid;
 
     padding: .5rem;
+}
+
+li {
+    &:has(a)::marker {
+        font-size: 1.4em;
+    }
+
+    &::marker {
+        content: "+ ";
+        font-family: Unifraktur-bold;
+    }
 }
 
 
@@ -100,9 +143,11 @@ a {
     color: black;
     text-decoration: none;
 
-    &:hover {
-        background-color: yellow;
-        color: black;
+    &:hover,
+    &:active,
+    &:focus {
+        font-weight: 600;
+        outline: dotted var(--line-color) 2px;
     }
 }
 
