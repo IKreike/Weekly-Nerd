@@ -32,7 +32,7 @@ main {
 
     grid-auto-flow: row dense;
     /* grid-auto-columns: 100px 150px 390px; */
-    /* gap: .5rem; */
+    gap: 1rem;
 }
 
 header {
@@ -41,6 +41,9 @@ header {
 
     h1 {
         text-transform: uppercase;
+        margin: 0;
+
+        font-size: clamp(1.5rem, -0.5rem + 10vw, 5rem);
 
         /* doing accents and flavour */
         &::before {
@@ -51,6 +54,7 @@ header {
     p {
         text-transform: uppercase;
         border-block: var(--line-color) 1px solid;
+        margin-top: 0;
     }
 }
 
@@ -58,11 +62,11 @@ article {
     border-inline: var(--line-color) 1px solid;
 
     padding: .5rem;
-    /* margin: .5rem; */
     width: 100%;
     min-width: 300px;
 
-    flex-grow: 1;
+    /* flex-grow: 1; */
+
 
     h2 {
         text-align: center;
@@ -74,12 +78,28 @@ article {
         }
     }
 
-    &:nth-of-type(3){
-        flex-grow: 2;
+    &#cassie,
+    &#reflection {
+        grid-column: span 2;
+
+        column-count: auto;
+        column-width: 16rem;
+        column-rule: dotted;
+
+        h2,
+        h2+p,
+        .quote {
+            column-span: all;
+        }
+    }
+
+    &.ad {
+        grid-column-start: 1;
+        grid-column-end: -1;
     }
 }
 
-/* refletion section */
+/* reflection section */
 section {
     border: var(--line-color) 1px solid;
     padding: .5rem;
@@ -107,14 +127,6 @@ img {
     background-color: rgb(43, 43, 43);
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    a {
-        color: white;
-    }
-
-    p {
-        font-size: small;
-    }
 }
 
 .quote {
@@ -160,7 +172,7 @@ a {
         color: lime;
     }
 
-    .method {
+    .element {
         color: aqua;
     }
 }
@@ -173,4 +185,59 @@ a {
 .hooks::after {
     content: ">";
     color: grey;
+}
+
+/* ************************ */
+/* article-specific styling */
+/* ************************ */
+
+#johns {
+    display: grid;
+    grid-template: [title] "title image" auto
+        [text] "text  image" auto
+        [disclaimer] "disclaimer image" auto [image] / 1fr auto;
+    gap: .5rem;
+
+    h2 {
+        grid-area: title;
+        margin: 0;
+        padding: 0;
+    }
+
+    iframe {
+        grid-area: image;
+        /* width: 20rem; */
+    }
+
+    /* p{
+        margin: 0;
+        padding: 0;
+    } */
+}
+
+#cassie .ad {
+    display: grid;
+    grid-template:
+        [title] "title title" auto
+        [text] "text  image" auto
+        [disclaimer] "disclaimer image" auto [image] / 1fr 1fr;
+    gap: .5rem;
+
+    a {
+        color: white;
+        grid-area: text;
+    }
+
+    p {
+        font-size: small;
+        grid-area: disclaimer;
+    }
+
+    h4 {
+        grid-area: title;
+    }
+
+    img {
+        grid-area: image;
+    }
 }

@@ -62,12 +62,10 @@
             <h4>In-Page Transitions</h4>
             <h4>The Parent Selector</h4>
             <section class="reflection">
-                <h4>Reflection</h4>
+                <h4>Reflection #1</h4>
                 <p>This Weekly Nerd by Killian was a good start to the minor—it broadened my perspective and opened my
-                    eyes to
-                    the possibilities of the World Wide Web. It provides a solid foundation for techniques and terms
-                    that will
-                    be used later in the minor.</p>
+                    eyes to the possibilities of the World Wide Web. It provides a solid foundation for techniques and
+                    terms that will be used later in the minor.</p>
             </section>
         </article>
         <!-- weekly nerd #2, Pay the web forward -->
@@ -105,7 +103,7 @@
                 <a href="https://webmonetization.org/">link</a>
             </section>
             <section class="reflection">
-                <h4>Reflection – #2</h4>
+                <h4>Reflection #2</h4>
                 <p>A Weekly Nerd, or a sales pitch? Peter-Paul Koch told us about payments on the web, and his reasons
                     seemed very ethical and strong. His view on the state and the future of the internet opened my
                     eyes. It did seem to melt into a sales pitch, which was a shame. I don’t know enough about it
@@ -129,16 +127,16 @@
         de tekst die in het ding staat!
         <span>/p</span> -->
                 gsap.
-                <span class="method">to</span>(
+                <span class="element">to</span>(
                 '<span>.box</span>'
-                <span class="method">(x=20d)</span>)
+                <span class="element">(x=20d)</span>)
             </p>
             <p>This string consists of:</p>
             <p class="code">
                 call gsap
-                <span class="method">method</span>
+                <span class="element">method</span>
                 <span>object</span>
-                <span class="method">method</span>
+                <span class="element">method</span>
             </p>
 
             <h4>Timelines</h4>
@@ -184,7 +182,7 @@
             </ul>
 
             <section class="reflection">
-                <h4>Reflection</h4>
+                <h4>Reflection #3</h4>
                 <p>I had never used or heard of GSAP before, which made the introduction mildly interesting and the code
                     examples somewhat useless. The lecture did make me interested in trying out the library, though not
                     for a specific project or using the highlighted features.</p>
@@ -225,7 +223,7 @@
             <p>Text here as well — systems in the real world.</p>
 
             <section class="reflection">
-                <h4>Reflection</h4>
+                <h4>Reflection #4</h4>
                 <p>This lecture by Jeremy was really interesting, and he is a great storyteller. You could tell he
                     is willing to share his experience and knowledge and is not trying to sell us anything. Key points
                     are:</p>
@@ -235,27 +233,19 @@
                     <li>Find yourself</li>
                 </ul>
             </section>
-
-            <img src="" alt="">
-            <section>
-                (Advertisement)
-                (Title)
-                (Text)
-                (Link)
-            </section>
         </article>
         <!-- weather report(or a menu?) -->
-        <article class="ad">
-            <h2>HALLO EN DIT IS HET WEER</h2>
-            <p>muziek</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore obcaecati alias enim quia
-                laborum neque aut accusamus ipsam nostrum, aspernatur doloribus nam sequi blanditiis commodi. Debitis
-                omnis consequatur accusantium!</p>
-            <p>stomme feitjes</p>
-            <p>muziek</p>
+        <article class="ad" id="johns">
+            <h2>Playlist Prescription</h2>
+            <p>your weekly selection of music</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At sapiente numquam nulla praesentium, officiis
+                quae perspiciatis ipsum. Earum modi, esse consectetur veritatis ipsam perspiciatis alias nobis
+                voluptates sapiente, suscipit nisi?</p>
+            <!-- <p>stomme feitjes</p>
+            <p>muziek</p> -->
             <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/track/3TXvlSjoTCp615ksnF4ji3?utm_source=generator&theme=0"
-                width="100%" height="352" frameBorder="0" allowfullscreen=""
+                width="100%" height="152" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
         </article>
@@ -342,7 +332,7 @@
                 makes the website clearer. And remember the biggest sin of all: a div with a role of button.</p>
 
             <p class="code hooks">
-                <span class="method">div</span>
+                <span class="element">div</span>
                 <span>role</span>="button"
             </p>
 
@@ -391,7 +381,7 @@
             <p>Nienke de Keizer has introduced accessibility improvements to GVB.</p>
 
             <section class="reflection">
-                <h4>Reflection – #7</h4>
+                <h4>Reflection #7</h4>
                 <p>Nienke's talk was very intimidating. Is that supposed to be me in two years? Am I on the
                     right track, and passionate enough? Her work was impressive and important, and I admire her for what
                     she
@@ -452,15 +442,66 @@
             <p>Conclusion: it can be very lucrative to work for yourself in this field.</p>
         </article>
         <!-- weekly nerd #8 IO clarke -->
+        <article id="IOclarke">
+            <h2>How do you automate testing your components like a real user</h2>
+            <p>Clarke verdel || 14-5-25</p>
+            <p>What if… we can ship software that just works</p>
+            <img src="./assets/testing trophy.webp" alt="">
+            <h3>The testing Trophy</h3>
+            <p>While creating any application, make sure to do the nececarry tests at each step</p>
+            <h4>Static testing</h4>
+            <ul>
+                <li>Use Lint to check your best practices</li>
+                <li>JS type checking</li>
+                <li>Type script -> compatibility in output</li>
+            </ul>
+            <h4>Unit and Component testing</h4>
+            <ul>
+                <li>Use code to test code</li>
+                <li>Input fields and smaller parts</li>
+            </ul>
+            <h4>Integration testing</h4>
+            <ul>
+                <li>There are lots of parts, so lots of tests that must be done</li>
+            </ul>
+            <h4>E2E (end to end testing)</h4>
+            <ul>
+                <li>testing in a visual environment</li>
+                <li>Testing everything together</li>
+            </ul>
+
+
+            <h3>Confidence in your code</h3>
+            <p>There is only one valid way to gain confidence in your code: lots and lots of testing. I recommend these:
+            </p>
+            <ul>
+                <li>Node runtime</li>
+                <li>Synthetic DOM</li>
+                <li>Browser testing (my favorite :) )</li>
+            </ul>
+            <p></p>
+            <p class="quote">“a good developer is a developer that can test”</p>
+
+            <section class="reflection">
+                <h4>Reflection #8</h4>
+                <p>I really liked the tree talks we had at IO. It really shows the advancement of technology and web
+                    development, and the growing number of ways we can utilize it. The first two talks gave insight on
+                    how a web developer works, their thinking process and actions. The last one gave insight about the
+                    importance of testing during the process of creation, with tips and best practices on how to do so.
+                </p>
+            </section>
+        </article>
         <!-- weekly nerd 9 pt 1 en 2 -->
         <!-- weekly nerd 10 -->
+        <!-- weekly nerd 11 pt 1 en 2 -->
+        <!-- weekly nerd bonus -->
         <!-- all the weekly nerd reflections -->
         <article id="revieuw">
             <h2>All of the Weekly Nerd Reflections</h2>
             <p>Let’s gooooo!</p>
-            <section> need to do nr 8</section>
             <section> need to do nr 9</section>
             <section> need to do nr 10</section>
+            <section> need to do nr 11</section>
         </article>
         <!-- learning goals master assignment (add hackathon revieuw here?) -->
         <article id="master">
@@ -540,7 +581,7 @@
 
             <h4>Experimental Tech</h4>
             <p>I took this assignment to experiment with some new tech, mostly in CSS. Most notably were the clamp
-                function (we were even nicknamed “Clampers” after all) and the “use” tag for SVGs.</p>
+                function (we were even nicknamed “Clampers”) and the “use” tag for SVGs.</p>
 
             <h4>My Contribution</h4>
             <p>I created a pure CSS animation to indicate the canvas could be swiped. I coded the extended card
