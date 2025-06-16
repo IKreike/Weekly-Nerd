@@ -119,6 +119,11 @@ p:nth-of-type(2)::first-letter {
 img {
     max-width: 100%;
     filter: grayscale(1);
+    transition: .5s;
+
+    &:hover{
+        filter: grayscale(0);
+    }
 }
 
 .ad {
@@ -195,12 +200,12 @@ a {
 /* article-specific styling */
 /* ************************ */
 
-#johns {
-    /* display: grid;
+#johns, #duck {
+    display: grid;
     grid-template: [title] "title image" auto
         [text] "text  image" auto
         [disclaimer] "disclaimer image" auto [image] / 1fr auto;
-    gap: .5rem; */
+    gap: .5rem;
 
     h2 {
         grid-area: title;
@@ -208,16 +213,16 @@ a {
         padding: 0;
     }
 
-    iframe {
+    iframe, img {
         grid-area: image;
         /* width: 20rem; */
     }
-
-    /* p{
-        margin: 0;
-        padding: 0;
-    } */
+    img{
+        max-height: 15rem;
+        padding: .5rem;
+    }
 }
+
 
 #cassie .ad {
     display: grid;
