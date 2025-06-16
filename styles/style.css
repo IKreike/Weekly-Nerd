@@ -78,13 +78,13 @@ article {
         }
     }
 
-    &#cassie,
-    &#reflection {
+    &.wide, .wide {
         grid-column: span 2;
 
         column-count: auto;
         column-width: 16rem;
         column-rule: dotted;
+        column-fill: balance;
 
         h2,
         h2+p,
@@ -127,6 +127,10 @@ img {
     background-color: rgb(43, 43, 43);
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    a{
+    color: white;
+    }
 }
 
 .quote {
@@ -192,11 +196,11 @@ a {
 /* ************************ */
 
 #johns {
-    display: grid;
+    /* display: grid;
     grid-template: [title] "title image" auto
         [text] "text  image" auto
         [disclaimer] "disclaimer image" auto [image] / 1fr auto;
-    gap: .5rem;
+    gap: .5rem; */
 
     h2 {
         grid-area: title;
